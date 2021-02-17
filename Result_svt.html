@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐럿 맞춤 노래</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1571974599782-87624638275e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80');
+        }
+
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        .svt {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: solid 3px rgba(189, 191, 209, 0.842);
+            background-color: white;
+            border-radius: 200px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            margin: 80px auto 50px auto;
+            background-image: url('scoups00.jpg');
+        }
+
+        .title {
+            color: rgba(87, 105, 184, 0.856);
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .msg {
+            color: rgba(46, 43, 36, 0.842);
+            text-align: center;
+            font-size: 25px;
+            line-height: 40px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .btn-back {
+            width: 150px;
+            height: 50px;
+            color: rgb(199, 146, 32);
+            border: royalblue;
+            border-radius: 10;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn-share {
+            width: 150px;
+            height: 50px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(199, 146, 32);
+            border: royalblue;
+            border-radius: 10;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 780px) {
+            body {
+                background-position: 70px -70px;
+                background-size: 500px;
+            }
+
+            .svt {
+                margin-top: 50px;
+            }
+
+            .msg {
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 36px;
+                padding: 10px;
+            }
+
+            .msg>br {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function back() {
+            let url = window.location.href;
+            let new_url = url.split('result.html')[0] + 'index.html';
+            window.location.href = new_url;
+        }
+        function share() {
+            var t = document.createElement("textarea");
+            document.body.appendChild(t);
+            t.value = window.location.href;
+            t.select();
+            document.execCommand('copy');
+            document.body.removeChild(t);
+            alert('복사 완료!')
+        }
+    </script>
+</head>
+
+<body>
+    <div class="svt"></div>
+    <h1 class="title">승철이가 추천하는 오늘의 노래는?</h1>>
+    <p class="msg">
+        "너무 걱정하지 말고 하루하루 잘 나아가 봐요."<br />
+        지친 하루 끝에 수고했단 작은 그 한마딘<br />
+        훗날에 기억될 오늘의 그림 같은<br />
+        지금의 추억이 될 거예요<br />
+        -힐링-<br />
+    </p>
+    <div class="btns">
+        <button onclick="back();" class="btn-back">뒤로가기</button>
+        <button onclick="share();" class="btn-share">공유하기</button>
+    </div>>
+</body>
+
+</html>
