@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>캐럿 맞춤 노래</title>
+    <title>잠깐 소녀야🌸</title>
+    
     <style>
-        body {
-            background-image: url('https://images.unsplash.com/photo-1571974599782-87624638275e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80');
-        }
 
-        * {
+        body {
+            background-image: url('../img/annie-spratt-FuTY0Q6OQmM-unsplash.jpg');
+      
+        }
+        *{
             font-family: 'Nanum Pen Script', cursive;
         }
-
         .svt {
             display: block;
             width: 200px;
@@ -25,75 +25,68 @@
             background-color: white;
             border-radius: 200px;
             margin: 10px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 15px;
             background-size: cover;
             background-position: center;
-            margin: 80px auto 50px auto;
-            background-image: url('scoups00.jpg');
+            margin: 80px auto 50px auto; 
+            background-image: url('../img/dk00.jpg');
         }
-
         .title {
-            color: rgba(87, 105, 184, 0.856);
+            color:rgba(34, 40, 41, 0.685);
             text-align: center;
             font-size: 40px;
         }
-
         .msg {
-            color: rgba(46, 43, 36, 0.842);
+            color: rgba(136, 113, 37, 0.918);
             text-align: center;
-            font-size: 25px;
-            line-height: 40px;
+            font-size: 32px;                  
         }
-
         .btns {
             display: flex;
             justify-content: center;
             flex-direction: row;
         }
-
         .btn-back {
-            width: 150px;
+            width: 100px;
             height: 50px;
-            color: rgb(199, 146, 32);
-            border: royalblue;
-            border-radius: 10;
+            color: rgb(255, 255, 255);
+            border: 2px solid silver;
+            background-color: slategray;
+            border-radius: 10px;
             font-size: 20px;
             cursor: pointer;
         }
-
         .btn-share {
-            width: 150px;
+            width: 100px;
             height: 50px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(199, 146, 32);
-            border: royalblue;
-            border-radius: 10;
+            color:slategray;
+            border: 2px solid silver;
+            background-color:rgb(255, 255, 255);
+            border-radius: 10px;
             font-size: 20px;
             cursor: pointer;
             margin-left: 10px;
         }
 
-        @media screen and (max-width: 780px) {
-            body {
-                background-position: 70px -70px;
-                background-size: 500px;
-            }
-
-            .svt {
+        @media screen and (max-width:780px) {
+            .rtan {
                 margin-top: 50px;
             }
-
             .msg {
                 font-size: 24px;
                 line-height: 36px;
                 margin-bottom: 36px;
                 padding: 10px;
             }
-
-            .msg>br {
-                display: none;
-            }
+          
         }
+
+
     </style>
+    
     <script>
         function back() {
             let url = window.location.href;
@@ -107,25 +100,31 @@
             t.select();
             document.execCommand('copy');
             document.body.removeChild(t);
-            alert('복사 완료!')
+            alert('세이더네임 세븐틴💎')
         }
+
+
+
     </script>
 </head>
-
 <body>
-    <div class="svt"></div>
-    <h1 class="title">승철이가 추천하는 오늘의 노래는?</h1>>
-    <p class="msg">
-        "너무 걱정하지 말고 하루하루 잘 나아가 봐요."<br />
-        지친 하루 끝에 수고했단 작은 그 한마딘<br />
-        훗날에 기억될 오늘의 그림 같은<br />
-        지금의 추억이 될 거예요<br />
-        -힐링-<br />
+    <div class="svt">도겸</div>
+    <h1 class="title">
+        너의 우주가 되어.🌠<br/>
+        - 끝이 안보여(Space) -
+    </h1>
+    <p class="msg">        
+        우주를 떠도는 기분 어디로 가야 할지를 몰라도 <br/>
+        저 멀리 별이 날 이끌어<br/>
+        I can feel it<br/>
+        내가 빛이 될 수 있음을 느껴<br/>
+        <a href="https://www.youtube.com/watch?v=2dIyiFAQfLQ" target="_blank">끝이 안보여</a>
     </p>
     <div class="btns">
-        <button onclick="back();" class="btn-back">뒤로가기</button>
+        <button href="../svt_index.html" onclick="location.href='../svt_index.html'" class="btn-back">뒤로가기</button>
         <button onclick="share();" class="btn-share">공유하기</button>
-    </div>>
+    </div>
+    
+   
 </body>
-
 </html>
